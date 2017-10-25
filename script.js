@@ -1,21 +1,30 @@
 $(document).ready(function() {
   $('#generatorButton').on('click',() => getQuote());
 
-  let getQuote = function(){
-    const init = {
-      method: 'getQuote',
-      lang: 'en'
-    }
-    const url = 'http://api.forismatic.com/api/1.0/'
-    fetch(url, init)
-    .then(function(data) {
-      console.log(data)
-    })
-    .catch(function(error){
-      // If get error.. what do you do?
-    })
+  function update(response) {
+  console.log(response)
+  }
 
+  function handleError(jqxhr, textStatus, err) {
+    console.log("Request Failed: " + textStatus + ", " + err);
+  }
+
+  let getQuote = function(){
+    $.ajax({
+        url: "https://api.forismatic.com/api/1.0/",
+        jsonp: "jsonp",
+        dataType: "jsonp",
+        data: {
+          method: "getQuote",
+          lang: "en",
+          format: "jsonp"
+        }
+      })
+      .done(update)
+      .fail(handleError);
   }// getQuote
 })
 
-// http://api.forismatic.com/api/1.0/?method=getQuote&lang=en
+
+
+
