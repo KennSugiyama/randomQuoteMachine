@@ -1,6 +1,11 @@
 $(document).ready(function() {
   $('#generatorButton').on('click',() => getQuote());
 
+  function displayQuote(quoteText, author) {
+    $('#quote').html(quoteText);
+    $('#author').html(author);
+  }
+
 
   let getQuote = function(){
     $.ajax({
@@ -13,11 +18,13 @@ $(document).ready(function() {
           format: "jsonp"
         }
       })
-      .done(update)
+      .done(parseJSON)
       .fail(handleError);
 
-    function update(response) {
-    console.log(response)
+    function parseJSON(JSON) {
+      let quoteText = JSON.quoteText;
+      let author = JSON.quoteAuthor;
+      displayQuote(quoteText, author);
     }
 
     function handleError(jqxhr, textStatus, err) {
