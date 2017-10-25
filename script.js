@@ -1,13 +1,6 @@
 $(document).ready(function() {
   $('#generatorButton').on('click',() => getQuote());
 
-  function update(response) {
-  console.log(response)
-  }
-
-  function handleError(jqxhr, textStatus, err) {
-    console.log("Request Failed: " + textStatus + ", " + err);
-  }
 
   let getQuote = function(){
     $.ajax({
@@ -22,6 +15,14 @@ $(document).ready(function() {
       })
       .done(update)
       .fail(handleError);
+
+    function update(response) {
+    console.log(response)
+    }
+
+    function handleError(jqxhr, textStatus, err) {
+      console.log("Request Failed: " + textStatus + ", " + err);
+    }
   }// getQuote
 })
 
