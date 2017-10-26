@@ -4,6 +4,7 @@ $(document).ready(function() {
   function displayQuote(quoteText, author) {
     $('#quote').html(quoteText);
     $('#author').html(author);
+    $('.quote-info').show();
   }
 
 
