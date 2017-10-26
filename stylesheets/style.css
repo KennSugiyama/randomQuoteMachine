@@ -11,6 +11,7 @@ body {
 
 
 header h1 {
+  font-size: 2.5em;
   color: #D2D2D2;
 }
 
@@ -43,7 +44,7 @@ header h1 {
 
 .quote-info {
   display: none;
-  background-color: white;
+  background-color: #E7E0E0;
   /*border-radius: 8px;*/
   margin: 15px;
   padding: 2.5px 5px 30px 5px;
@@ -51,10 +52,12 @@ header h1 {
 }
 
 #quote {
-  /*color: blue;*/
+  font-size: 2em;
 }
 
 #author {
+  font-size: 2em;
+  padding: 0 20px;
   text-align: right;
   /*color: red;*/
 }

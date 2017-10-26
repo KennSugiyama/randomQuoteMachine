@@ -24,7 +24,8 @@ $(document).ready(function() {
 
     function parseJSON(JSON) {
       let quoteText = JSON.quoteText;
-      let author = JSON.quoteAuthor;
+      let author = "- "
+      author += JSON.quoteAuthor;
       displayQuote(quoteText, author);
     }
 
