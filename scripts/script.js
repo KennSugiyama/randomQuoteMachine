@@ -33,7 +33,15 @@ $(document).ready(function() {
       console.log("Request Failed: " + textStatus + ", " + err);
     }
   }// getQuote
+
+  $('#tweetQuote').on('click',() => {
+    let tweet = "https://twitter.com/intent/tweet?text="
+     tweet += $('.quote-info>#quote').text() + $('.quote-info>#author').text()
+   $('.twitter-share-button').attr('href',tweet)
+  })// tweetQuote
 })
+
+
 
 
 
