@@ -1,7 +1,5 @@
-import { UNSPLASHED_KEY } from './secretKeys.js'
-
 $(document).ready(function() {
-  $('#generatorButton').on('click',() => console.log('UNSPLASHEDKEY'))//getQuote());
+  $('#generatorButton').on('click',() => getQuote());
 
   function displayQuote(quoteText, author) {
     $('#quote').html(quoteText);
