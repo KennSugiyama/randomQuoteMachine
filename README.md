@@ -3,7 +3,11 @@ A refresher mini JS project.  Project idea came from [freeCodeCamp](https://www.
 
 ## User Stories
 1) User can press a button to get a random quote.
-2) User can press a button to tweet out the quote. [WIP]
+2) User can press a button to tweet out the quote.
+
+## Error Handling
+1) Some quotes do not have an author [NOT YET ADDRESSED]
+2) Some tweets do not properly format. [NOT YET ADDRESSED]
 
 ## Future feature ideas
 - Background image that changes according to the randomly generate quote.
