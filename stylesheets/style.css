@@ -1,0 +1,63 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: Arial, Helvetica, Times New;
+  background-color: #494949;
+}
+
+
+header h1 {
+  font-size: 2.5em;
+  color: #D2D2D2;
+}
+
+.container {
+  /*border-radius: 8px;*/
+  /*border: 2px solid;*/
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px 10px;
+  background-color: #506878;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container button {
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  /*color: red;*/
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: 0px solid blue;
+  background-color: #D2D2D2;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.quote-info {
+  display: none;
+  background-color: #E7E0E0;
+  /*border-radius: 8px;*/
+  margin: 15px;
+  padding: 2.5px 5px 30px 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#quote {
+  font-size: 2em;
+}
+
+#author {
+  font-size: 2em;
+  padding: 0 20px;
+  text-align: right;
+  /*color: red;*/
+}
